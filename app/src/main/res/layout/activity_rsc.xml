@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.discovery.RSCActivity">
+
+    <include
+        android:id="@+id/tv_titles"
+        layout="@layout/activity_title_bar" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="计步实验"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tv_titles"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="热量" />
+
+                <TextView
+                    android:id="@+id/calory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="right"
+                    android:text="@string/not_available_value"
+                    android:textSize="36.0sp" />
+
+                <TextView
+                    android:id="@+id/calory_unit"
+                    android:layout_width="45.0dip"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="bottom"
+                    android:text="@string/rsc_calory_unit" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/rsc_cadence" />
+
+                <TextView
+                    android:id="@+id/cadence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="right"
+                    android:text="@string/not_available_value"
+                    android:textSize="36.0sp" />
+
+                <TextView
+                    android:layout_width="45.0dip"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="bottom"
+                    android:text="@string/rsc_cadence_unit" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/rsc_distance" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="right"
+                    android:text="@string/not_available_value"
+                    android:textSize="36.0sp" />
+
+                <TextView
+                    android:id="@+id/distance_unit"
+                    android:layout_width="45.0dip"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="bottom"
+                    android:text="@string/rsc_distance_unit_m" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="@string/rsc_strides" />
+
+                <TextView
+                    android:id="@+id/strides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="right"
+                    android:text="@string/not_available_value"
+                    android:textSize="36.0sp" />
+
+                <TextView
+                    android:id="@+id/rsc_strides_unit"
+                    android:layout_width="45.0dip"
+                    android:layout_height="fill_parent"
+                    android:freezesText="true"
+                    android:gravity="bottom"
+                    android:text="@string/rsc_strides_unit" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rsc_section_activity_header" />
+
+        <TextView
+            android:id="@+id/activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:freezesText="true"
+            android:padding="8.0dip"
+            android:text="@string/not_available"
+            android:textSize="22.0sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/action_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rsc_action_open" />
+
+        <Button
+            android:id="@+id/action_getData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/rsc_action_data" />
+    </LinearLayout>
+
+
+</RelativeLayout>

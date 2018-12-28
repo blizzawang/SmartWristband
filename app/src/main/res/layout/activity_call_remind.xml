@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.discovery.CallRemindActivity">
+
+    <include layout="@layout/activity_title_bar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="来电提醒实验"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/imageLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/action_openMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:onClick="openMessage"
+        android:text="打开短信提醒"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/action_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="打开来电提醒" />
+
+
+</RelativeLayout>

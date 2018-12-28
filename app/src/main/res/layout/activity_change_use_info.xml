@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.me.ChangeUseInfoActivity">
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="#737373"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="-40dp"
+            android:src="@drawable/info_delete" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:id="@+id/tv_mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 好名字更容易让人记住你。"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:visibility="gone"></TextView>
+
+
+</LinearLayout>

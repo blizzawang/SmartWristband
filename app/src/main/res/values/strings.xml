@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">智能手环</string>
+    <string name="title_home">设备</string>
+    <string name="title_dashboard">发现</string>
+    <string name="title_notifications">我</string>
+    <string name="not_available_value">" - "</string>
+    <string name="rsc_action_close">关闭计步</string>
+    <string name="rsc_action_data">获取数据</string>
+    <string name="rsc_action_open">打开计步</string>
+    <string name="rsc_cadence">步频</string>
+    <string name="rsc_cadence_unit">SPM</string>
+    <string name="rsc_calory">热量</string>
+    <string name="rsc_calory_unit">kCal</string>
+    <string name="rsc_default_name">计步实验</string>
+    <string name="rsc_distance">距离</string>
+    <string name="rsc_distance_unit_km">km</string>
+    <string name="rsc_distance_unit_m">m</string>
+    <string name="rsc_distance_unit_mile">mile</string>
+    <string name="rsc_distance_unit_yd">yd</string>
+    <string name="rsc_feature_title">计步器</string>
+    <string name="rsc_feature_title_long">步频</string>
+    <string name="rsc_running">跑步</string>
+    <string name="rsc_section_activity_header">活动</string>
+    <string name="rsc_section_rsc_header">速度和步频</string>
+    <string name="rsc_section_strides_header" />
+    <string name="rsc_settings_title">计步器设置</string>
+    <string name="rsc_speed_unit_km_h">km/h</string>
+    <string name="rsc_speed_unit_m_s">km/h</string>
+    <string name="rsc_speed_unit_mph">mph</string>
+    <string name="rsc_strides">步数</string>
+    <string name="rsc_strides_unit">步</string>
+    <string name="rsc_total_distance">总距离</string>
+    <string name="rsc_total_distance_unit_km">km</string>
+    <string name="rsc_total_distance_unit_mile">mile</string>
+    <string name="rsc_walking">走路</string>
+    <string name="not_available">n/a</string>
+    <string name="hrs_default_name">心跳监测实验</string>
+    <string name="hrs_feature_title">心跳监测实验</string>
+    <string name="hrs_feature_title_long">心跳监测实验</string>
+    <string name="hrs_location_other">接收</string>
+    <string name="hrs_position_label">传感器位置</string>
+    <string name="hrs_start">开始</string>
+    <string name="hrs_stop">停止</string>
+    <string name="hrs_value_unit">bpm</string>
+    <string name="username">账号:</string>
+    <string name="password">密码:</string>
+    <string name="login">登陆</string>
+    <string name="proximity_default_name">防盗实验</string>
+    <string name="proximity_action_findme">打开防丢</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_base">BaseActivity</string>
+</resources>

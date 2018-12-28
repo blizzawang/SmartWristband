@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.discovery.AlarmActivity">
+
+    <include
+        android:id="@+id/layout_bar" layout="@layout/activity_title_bar" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="提醒操作实验"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/alarm_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llayout_bottom"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/layout_bar" />
+
+    <LinearLayout
+        android:id="@+id/llayout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30.0dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/action_alarm_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSyncTime"
+            android:text="同步时间" />
+
+
+    </LinearLayout>
+</RelativeLayout>

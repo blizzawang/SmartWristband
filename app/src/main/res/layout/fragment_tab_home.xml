@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    tools:context=".fragment.TabHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+   <!-- <ImageView
+        android:id="@+id/iv_iamge"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/shouhua"
+        android:scaleType="fitCenter" />-->
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="150dp"
+        android:background="#E3E3E3"/>
+        <!--android:layout_below="@id/iv_iamge"-->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#F7F8F8"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+       <!-- <ImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/course_bar_icon" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:text="当前设备："
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="设备"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_help"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#F7F8F8"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+       <!-- <ImageView
+            android:id="@+id/iv_userhelp_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/course_bar_icon" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_userhelp_icon"
+            android:text="当前状态："
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="状态"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/rl_loginout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#F7F8F8"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+       <!-- <ImageView
+            android:id="@+id/iv_loginout_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/course_bar_icon" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_loginout_icon"
+            android:text="当前电量："
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_electric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:text="电量"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/views"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#F7F8F8"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="选择设备" />
+
+        <Button
+            android:id="@+id/btn_connent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBottom="@id/btn_search"
+            android:layout_toRightOf="@id/btn_search"
+            android:text="连接设备" />
+
+        <Button
+            android:id="@+id/btn_disconnent"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_search"
+            android:layout_toRightOf="@id/btn_connent"
+            android:text="断开设备" />
+
+
+        <!--<Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_search"
+            android:layout_toRightOf="@id/btn_disconnent"
+            android:text="删除设备" />-->
+    </RelativeLayout>
+
+
+</LinearLayout>
